@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html manifest="reitti.manifest">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="stylesheet" type="text/css" href="css/reitti2.css" />
+<link rel="stylesheet" media="only screen and (min-width: 769px)" href="css/desktop.css">
+<link rel="stylesheet" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="css/iphone-4.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="js/config.js"></script>
+<script type="text/javascript" src="js/proxy.js"></script>
+<script type="text/javascript" src="js/reittiopas_constants.js"></script>
+<script type="text/javascript" src="js/geocode.js"></script>
+<script type="text/javascript" src="js/router.js"></script>
+<script type="text/javascript" src="js/reitti.js"></script>
+
+<script type="text/javascript" src="js/test/testFixture.js"></script>
+
+<title>mobiilireitti</title>
+</head>
+
+<body>
+
+<div data-role="page" id="search-page">
+<h1>reitti</h1>
+
+
+<form method="get" accept-charset="UTF-8">
+
+<table border="0">
+<tr>
+<td>Mistä</td>
+<td>
+<input id="origin" type="text" name="origin" class="address" value="Tietäjäntie"/><img id="gps" src="icons/compass.png"/>
+</td>
+<td><div id="origin-feedback" data-for="origin" class="feedback"></div></td>
+</tr>
+
+<tr>
+<td>Mihin</td>
+<td><input id="destination" type="text" name="destination" class="address" value="hitsaajankatu 24 helsinki"/></td>
+<td><div id="destination-feedback" data-for="destination" class="feedback"></div></td>
+</tr>
+</table>
+
+<button id="search" type="button" value="search">search</button>
+</form>
+
+<div class="routing">
+<h3 class="title"></h3>
+
+<ol class="routes">
+</ol>
+
+</div>
+
+</div>
+
+<div data-role="page" id="route-page">
+<div class="top-toolbar">
+<button id="back" type="button" value="back">back</button>
+</div>
+<div id="route-details"></div>
+</div>
+
+<div data-role="page" id="map-page">
+<div class="top-toolbar">
+<button id="back" type="button" value="back">back</button>
+</div>
+<div id="map">
+</div>
+</div>
+
+
+</body>
+</html>
