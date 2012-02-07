@@ -24,7 +24,7 @@ DONE
 - mavenize
 - detect geo location
 - fix address picker
-- ï¿½ï¿½kkï¿½skoodausbugi osoitehaussa (iso8859 instead of UTF8 urlencoded)
+- ŠŠkkšskoodausbugi osoitehaussa (iso8859 instead of UTF8 urlencoded)
 - show route on map
 - fix duplicate route bug
 - port to jetty (use jetty transparent proxy)
