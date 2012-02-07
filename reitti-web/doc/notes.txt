@@ -1,4 +1,3 @@
-
 TODO
 - route breakdown (list legs, allow showing legs on map)
 - my routes
@@ -25,7 +24,7 @@ DONE
 - mavenize
 - detect geo location
 - fix address picker
-- ŠŠkkšskoodausbugi osoitehaussa (iso8859 instead of UTF8 urlencoded)
+- ï¿½ï¿½kkï¿½skoodausbugi osoitehaussa (iso8859 instead of UTF8 urlencoded)
 - show route on map
 - fix duplicate route bug
 - port to jetty (use jetty transparent proxy)
@@ -42,17 +41,6 @@ same origin policy problem
 
 =========================
 
-# reittiopas geocode
-http://api.reittiopas.fi/hsl/prod/?request=geocode&key=kuovikuja&user=journalier&pass=foobar&epsg_out=4326
-kuovikuja 4: 		"25.0522389469,60.3503342005"
-hitsaajankatu 24:	"25.0347376074,60.1928166585"
-
-
-http://api.reittiopas.fi/hsl/prod/?request=route&from=25.0522389469,60.3503342005&to=25.0347376074,60.1928166585&user=journalier&pass=foobar&epsg_in=4326&&epsg_out=4326
-
-=========================
-
-
 http://wiki.eclipse.org/Jetty_WTP_Plugin
 
 =========================
@@ -60,4 +48,4 @@ http://wiki.eclipse.org/Jetty_WTP_Plugin
 Reittiopas API
 - errors (e.g. invalid "request" parameter value) are not reported using HTTP error codes
   or custom HTTP header.
-- 
+
